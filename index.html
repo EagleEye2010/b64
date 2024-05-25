@@ -1,0 +1,30 @@
+<html>
+  <body>
+    <style>*{font-family:Arial;}</style>
+    <h1>Encode</h1>
+    <textarea rows=10 cols=10 id=e></textarea>
+    <br>
+    <button id=erun onclick=encode()>Run Encode</button>
+    <br><br>
+    <h1>Decode</h1>
+    <textarea rows=10 cols=10 id=d></textarea>
+    <br>
+    <button id=drun onclick=decode()>Run Decode</button>
+    <br><br>
+    <h1>Result</h1>
+    <textarea id=res cols=10 rows=10>Your result will be here</textarea>
+    <script>
+      function encode() {
+        let t = document.getElementById('e').value;
+        let r = btoa(t);
+        document.getElementById('res').value = r;
+      }
+
+      function decode() {
+        let t = document.getElementById('d').value;
+        let r = atob(t);
+        document.getElementById('res').value = r;
+      }
+    </script>
+  </body>
+</html>
