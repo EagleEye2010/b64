@@ -1,18 +1,18 @@
 <html>
   <body>
     <style>*{font-family:Arial;}</style>
-    <h1>Encode</h1>
-    <textarea rows=10 cols=10 id=e></textarea>
+    <h2>Encode</h2>
+    <textarea rows=3 cols=20 id=e></textarea>
     <br>
     <button id=erun onclick=encode()>Run Encode</button>
     <br><br>
-    <h1>Decode</h1>
-    <textarea rows=10 cols=10 id=d></textarea>
+    <h2>Decode</h2>
+    <textarea rows=3 cols=20 id=d></textarea>
     <br>
     <button id=drun onclick=decode()>Run Decode</button>
     <br><br>
-    <h1>Result</h1>
-    <textarea id=res cols=10 rows=10>Your result will be here</textarea>
+    <h2>Result</h2>
+    <textarea id=res cols=3 rows=20>Your result will be here</textarea>
     <script>
       function encode() {
         let t = document.getElementById('e').value;
